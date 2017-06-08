@@ -1,0 +1,12 @@
+
+
+1. 在  Property page的 configuration properties 的 [C/C++] -> [Pre-compiled Header] 選擇 "Not Using Precompiled Headers"
+2. 在  Property page的 configuration properties 的 [C/C++] -> [ Preprocessor ] -> [Preprocessor Definitions ] 加入
+   一個 MARKUP_STL 字 , 例如 --->WIN32;_WINDOWS;_DEBUG;MARKUP_STL
+
+In Visual C++ projects that use precompiled headers you will need to turn them off for Markup.cpp 
+(see Pre-compiled Header Issue)
+
+
+
+In Visual C++ to use STL string instead of MFC CString add MARKUP_STL to your C++ Preprocessor Definitions
